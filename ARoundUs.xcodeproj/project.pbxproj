@@ -13,6 +13,11 @@
 		8C7C89FE26074EB900F0A777 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C89FC26074EB900F0A777 /* Main.storyboard */; };
 		8C7C8A0026074EB900F0A777 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C89FF26074EB900F0A777 /* Assets.xcassets */; };
 		8C7C8A0326074EB900F0A777 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C8A0126074EB900F0A777 /* LaunchScreen.storyboard */; };
+		8C7C8A142607508700F0A777 /* Shiretoko-National-Park.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C8A0F2607508700F0A777 /* Shiretoko-National-Park.sks */; };
+		8C7C8A152607508700F0A777 /* Lake-Toya.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C8A102607508700F0A777 /* Lake-Toya.sks */; };
+		8C7C8A162607508700F0A777 /* Sapporo-Odori-Park.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C8A112607508700F0A777 /* Sapporo-Odori-Park.sks */; };
+		8C7C8A172607508700F0A777 /* Goryokaku.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C8A122607508700F0A777 /* Goryokaku.sks */; };
+		8C7C8A182607508700F0A777 /* Shirogane-Blue-Pond.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C8A132607508700F0A777 /* Shirogane-Blue-Pond.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		8C7C89FF26074EB900F0A777 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C7C8A0226074EB900F0A777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C7C8A0426074EB900F0A777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C7C8A0F2607508700F0A777 /* Shiretoko-National-Park.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Shiretoko-National-Park.sks"; sourceTree = "<group>"; };
+		8C7C8A102607508700F0A777 /* Lake-Toya.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Lake-Toya.sks"; sourceTree = "<group>"; };
+		8C7C8A112607508700F0A777 /* Sapporo-Odori-Park.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Sapporo-Odori-Park.sks"; sourceTree = "<group>"; };
+		8C7C8A122607508700F0A777 /* Goryokaku.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Goryokaku.sks; sourceTree = "<group>"; };
+		8C7C8A132607508700F0A777 /* Shirogane-Blue-Pond.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Shirogane-Blue-Pond.sks"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		8C7C89F526074EB800F0A777 /* ARoundUs */ = {
 			isa = PBXGroup;
 			children = (
+				8C7C8A0B2607500900F0A777 /* SK-scene */,
 				8C7C89F626074EB900F0A777 /* AppDelegate.swift */,
 				8C7C89F826074EB900F0A777 /* art.scnassets */,
 				8C7C89FA26074EB900F0A777 /* ViewController.swift */,
@@ -65,6 +76,18 @@
 				8C7C8A0426074EB900F0A777 /* Info.plist */,
 			);
 			path = ARoundUs;
+			sourceTree = "<group>";
+		};
+		8C7C8A0B2607500900F0A777 /* SK-scene */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C8A122607508700F0A777 /* Goryokaku.sks */,
+				8C7C8A102607508700F0A777 /* Lake-Toya.sks */,
+				8C7C8A112607508700F0A777 /* Sapporo-Odori-Park.sks */,
+				8C7C8A0F2607508700F0A777 /* Shiretoko-National-Park.sks */,
+				8C7C8A132607508700F0A777 /* Shirogane-Blue-Pond.sks */,
+			);
+			path = "SK-scene";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +147,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7C8A172607508700F0A777 /* Goryokaku.sks in Resources */,
 				8C7C89F926074EB900F0A777 /* art.scnassets in Resources */,
 				8C7C8A0326074EB900F0A777 /* LaunchScreen.storyboard in Resources */,
+				8C7C8A182607508700F0A777 /* Shirogane-Blue-Pond.sks in Resources */,
+				8C7C8A142607508700F0A777 /* Shiretoko-National-Park.sks in Resources */,
+				8C7C8A152607508700F0A777 /* Lake-Toya.sks in Resources */,
 				8C7C8A0026074EB900F0A777 /* Assets.xcassets in Resources */,
+				8C7C8A162607508700F0A777 /* Sapporo-Odori-Park.sks in Resources */,
 				8C7C89FE26074EB900F0A777 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,23 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "resources" : [
+    {
+      "filename" : "square-Goryokaku.arreferenceimage"
+    },
+    {
+      "filename" : "square-Lake-Toya.arreferenceimage"
+    },
+    {
+      "filename" : "square-Sapporo-Odori-Park.arreferenceimage"
+    },
+    {
+      "filename" : "square-Shiretoko-National-Park.arreferenceimage"
+    },
+    {
+      "filename" : "square-Shirogane-Blue-Pond.arreferenceimage"
+    }
+  ]
+}
