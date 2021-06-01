@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C3EA81126652F5400A62D9E /* memes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3EA81026652F5400A62D9E /* memes.swift */; };
+		8C3EA8132665303300A62D9E /* DataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3EA8122665303300A62D9E /* DataAPI.swift */; };
+		8C3EA81526653CAF00A62D9E /* MemeTemplate.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8C3EA81426653CAF00A62D9E /* MemeTemplate.sks */; };
 		8C7C89F726074EB900F0A777 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C89F626074EB900F0A777 /* AppDelegate.swift */; };
 		8C7C89F926074EB900F0A777 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C89F826074EB900F0A777 /* art.scnassets */; };
 		8C7C89FB26074EB900F0A777 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C89FA26074EB900F0A777 /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C3EA81026652F5400A62D9E /* memes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memes.swift; sourceTree = "<group>"; };
+		8C3EA8122665303300A62D9E /* DataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAPI.swift; sourceTree = "<group>"; };
+		8C3EA81426653CAF00A62D9E /* MemeTemplate.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MemeTemplate.sks; sourceTree = "<group>"; };
 		8C7C89F326074EB800F0A777 /* ARoundUs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARoundUs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7C89F626074EB900F0A777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C7C89F826074EB900F0A777 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -74,6 +80,8 @@
 				8C7C89FF26074EB900F0A777 /* Assets.xcassets */,
 				8C7C8A0126074EB900F0A777 /* LaunchScreen.storyboard */,
 				8C7C8A0426074EB900F0A777 /* Info.plist */,
+				8C3EA81026652F5400A62D9E /* memes.swift */,
+				8C3EA8122665303300A62D9E /* DataAPI.swift */,
 			);
 			path = ARoundUs;
 			sourceTree = "<group>";
@@ -81,6 +89,7 @@
 		8C7C8A0B2607500900F0A777 /* SK-scene */ = {
 			isa = PBXGroup;
 			children = (
+				8C3EA81426653CAF00A62D9E /* MemeTemplate.sks */,
 				8C7C8A122607508700F0A777 /* Goryokaku.sks */,
 				8C7C8A102607508700F0A777 /* Lake-Toya.sks */,
 				8C7C8A112607508700F0A777 /* Sapporo-Odori-Park.sks */,
@@ -154,6 +163,7 @@
 				8C7C8A142607508700F0A777 /* Shiretoko-National-Park.sks in Resources */,
 				8C7C8A152607508700F0A777 /* Lake-Toya.sks in Resources */,
 				8C7C8A0026074EB900F0A777 /* Assets.xcassets in Resources */,
+				8C3EA81526653CAF00A62D9E /* MemeTemplate.sks in Resources */,
 				8C7C8A162607508700F0A777 /* Sapporo-Odori-Park.sks in Resources */,
 				8C7C89FE26074EB900F0A777 /* Main.storyboard in Resources */,
 			);
@@ -168,6 +178,8 @@
 			files = (
 				8C7C89FB26074EB900F0A777 /* ViewController.swift in Sources */,
 				8C7C89F726074EB900F0A777 /* AppDelegate.swift in Sources */,
+				8C3EA81126652F5400A62D9E /* memes.swift in Sources */,
+				8C3EA8132665303300A62D9E /* DataAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
