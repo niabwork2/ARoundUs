@@ -4,6 +4,7 @@
 //
 //  Created by niab on Mar/21/21.
 //
+// TODO: 1.Detail Cell, 2.Edit Cell, 3.Swipe to delete, 4.CoreData, 5.image from photo
 
 import UIKit
 import SceneKit
@@ -13,10 +14,17 @@ import ARKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if let tabBarController = window?.rootViewController as? UITabBarController {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "TabController")
+            
+            tabBarController.selectedIndex = 0
+//            vc.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
+//            tabBarController.viewControllers?.append(vc)
+        }
         return true
     }
 

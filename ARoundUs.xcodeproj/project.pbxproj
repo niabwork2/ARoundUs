@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C24BCDB266CD14D0016EB66 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C24BCDA266CD14D0016EB66 /* GalleryCell.swift */; };
+		8C24BCDD266CE1B80016EB66 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C24BCDC266CE1B80016EB66 /* MainTabBarController.swift */; };
 		8C3EA81126652F5400A62D9E /* memes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3EA81026652F5400A62D9E /* memes.swift */; };
 		8C3EA8132665303300A62D9E /* DataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3EA8122665303300A62D9E /* DataAPI.swift */; };
 		8C3EA81526653CAF00A62D9E /* MemeTemplate.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8C3EA81426653CAF00A62D9E /* MemeTemplate.sks */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C24BCDA266CD14D0016EB66 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		8C24BCDC266CE1B80016EB66 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		8C3EA81026652F5400A62D9E /* memes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memes.swift; sourceTree = "<group>"; };
 		8C3EA8122665303300A62D9E /* DataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAPI.swift; sourceTree = "<group>"; };
 		8C3EA81426653CAF00A62D9E /* MemeTemplate.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MemeTemplate.sks; sourceTree = "<group>"; };
@@ -101,9 +105,11 @@
 		8C9EB155266BCA9000D7B942 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8C24BCDC266CE1B80016EB66 /* MainTabBarController.swift */,
 				8C7C89FA26074EB900F0A777 /* ViewController.swift */,
 				8C9EB158266BE71800D7B942 /* AddImageVCSegue.swift */,
 				8C9EB15A266C0C3600D7B942 /* GalleryTableViewController.swift */,
+				8C24BCDA266CD14D0016EB66 /* GalleryCell.swift */,
 				8C7C89FC26074EB900F0A777 /* Main.storyboard */,
 				8C7C8A0126074EB900F0A777 /* LaunchScreen.storyboard */,
 			);
@@ -207,6 +213,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C9EB15B266C0C3600D7B942 /* GalleryTableViewController.swift in Sources */,
+				8C24BCDB266CD14D0016EB66 /* GalleryCell.swift in Sources */,
+				8C24BCDD266CE1B80016EB66 /* MainTabBarController.swift in Sources */,
 				8C7C89FB26074EB900F0A777 /* ViewController.swift in Sources */,
 				8C7C89F726074EB900F0A777 /* AppDelegate.swift in Sources */,
 				8C3EA81126652F5400A62D9E /* memes.swift in Sources */,
