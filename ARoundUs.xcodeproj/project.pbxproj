@@ -21,6 +21,8 @@
 		8C7C8A162607508700F0A777 /* Sapporo-Odori-Park.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C8A112607508700F0A777 /* Sapporo-Odori-Park.sks */; };
 		8C7C8A172607508700F0A777 /* Goryokaku.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C8A122607508700F0A777 /* Goryokaku.sks */; };
 		8C7C8A182607508700F0A777 /* Shirogane-Blue-Pond.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C8A132607508700F0A777 /* Shirogane-Blue-Pond.sks */; };
+		8C9EB159266BE71800D7B942 /* AddImageVCSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9EB158266BE71800D7B942 /* AddImageVCSegue.swift */; };
+		8C9EB15B266C0C3600D7B942 /* GalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9EB15A266C0C3600D7B942 /* GalleryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		8C7C8A112607508700F0A777 /* Sapporo-Odori-Park.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Sapporo-Odori-Park.sks"; sourceTree = "<group>"; };
 		8C7C8A122607508700F0A777 /* Goryokaku.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Goryokaku.sks; sourceTree = "<group>"; };
 		8C7C8A132607508700F0A777 /* Shirogane-Blue-Pond.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Shirogane-Blue-Pond.sks"; sourceTree = "<group>"; };
+		8C9EB158266BE71800D7B942 /* AddImageVCSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageVCSegue.swift; sourceTree = "<group>"; };
+		8C9EB15A266C0C3600D7B942 /* GalleryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,16 +76,11 @@
 		8C7C89F526074EB800F0A777 /* ARoundUs */ = {
 			isa = PBXGroup;
 			children = (
-				8C7C8A0B2607500900F0A777 /* SK-scene */,
-				8C7C89F626074EB900F0A777 /* AppDelegate.swift */,
-				8C7C89F826074EB900F0A777 /* art.scnassets */,
-				8C7C89FA26074EB900F0A777 /* ViewController.swift */,
-				8C7C89FC26074EB900F0A777 /* Main.storyboard */,
-				8C7C89FF26074EB900F0A777 /* Assets.xcassets */,
-				8C7C8A0126074EB900F0A777 /* LaunchScreen.storyboard */,
 				8C7C8A0426074EB900F0A777 /* Info.plist */,
-				8C3EA81026652F5400A62D9E /* memes.swift */,
-				8C3EA8122665303300A62D9E /* DataAPI.swift */,
+				8C9EB157266BCAC400D7B942 /* Other */,
+				8C9EB156266BCAB000D7B942 /* Model */,
+				8C7C8A0B2607500900F0A777 /* SK-scene */,
+				8C9EB155266BCA9000D7B942 /* Views */,
 			);
 			path = ARoundUs;
 			sourceTree = "<group>";
@@ -97,6 +96,37 @@
 				8C7C8A132607508700F0A777 /* Shirogane-Blue-Pond.sks */,
 			);
 			path = "SK-scene";
+			sourceTree = "<group>";
+		};
+		8C9EB155266BCA9000D7B942 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C89FA26074EB900F0A777 /* ViewController.swift */,
+				8C9EB158266BE71800D7B942 /* AddImageVCSegue.swift */,
+				8C9EB15A266C0C3600D7B942 /* GalleryTableViewController.swift */,
+				8C7C89FC26074EB900F0A777 /* Main.storyboard */,
+				8C7C8A0126074EB900F0A777 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8C9EB156266BCAB000D7B942 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C3EA8122665303300A62D9E /* DataAPI.swift */,
+				8C3EA81026652F5400A62D9E /* memes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C9EB157266BCAC400D7B942 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C89FF26074EB900F0A777 /* Assets.xcassets */,
+				8C7C89F826074EB900F0A777 /* art.scnassets */,
+				8C7C89F626074EB900F0A777 /* AppDelegate.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,10 +206,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C9EB15B266C0C3600D7B942 /* GalleryTableViewController.swift in Sources */,
 				8C7C89FB26074EB900F0A777 /* ViewController.swift in Sources */,
 				8C7C89F726074EB900F0A777 /* AppDelegate.swift in Sources */,
 				8C3EA81126652F5400A62D9E /* memes.swift in Sources */,
 				8C3EA8132665303300A62D9E /* DataAPI.swift in Sources */,
+				8C9EB159266BE71800D7B942 /* AddImageVCSegue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
