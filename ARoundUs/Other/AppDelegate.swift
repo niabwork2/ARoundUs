@@ -4,7 +4,7 @@
 //
 //  Created by niab on Mar/21/21.
 //
-// TODO: 1.Detail Cell, 2.Edit Cell, 3.Swipe to delete, 4.CoreData, 5.image from photo
+// TODO: 1.[OK] Detail Cell , 2.Edit Cell, 3.Swipe to delete, 4.CoreData, 5.[OK]Image from photo
 
 import UIKit
 import SceneKit
@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         if let tabBarController = window?.rootViewController as? UITabBarController {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "TabController")
+            _ = storyboard.instantiateViewController(withIdentifier: "TabController")
             
             tabBarController.selectedIndex = 0
 //            vc.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)

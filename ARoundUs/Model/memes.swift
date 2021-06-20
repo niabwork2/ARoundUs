@@ -13,6 +13,7 @@ struct memes: Codable {
     var name: String
     var details: String
     var imageData: Data
+    var date: Date
     
 //    var url: String
 //    var width: Int

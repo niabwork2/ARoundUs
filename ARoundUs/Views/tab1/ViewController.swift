@@ -205,11 +205,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 let MemeName = spriteKitScene?.childNode(withName: "MemeName") as! SKLabelNode
                 let MemeImage = spriteKitScene?.childNode(withName: "MemeImage") as! SKSpriteNode
                 let MemeDetails = spriteKitScene?.childNode(withName: "MemeDetails") as! SKLabelNode
+                let MemeDate = spriteKitScene?.childNode(withName: "MemeDate") as! SKLabelNode
                 
                 if imageAnchor.referenceImage.name == eachItem.name {
                     
                     MemeName.text = eachItem.name
                     MemeDetails.text = eachItem.details
+                    
+                    let format = DateFormatter()
+                    format.timeZone = .current
+                    format.dateFormat = "E, d MMM yyyy HH:mm:ss"
+                    MemeDate.text =  format.string(from: eachItem.date)
                     
                     //let url = URL(string: memes.url)
                     //let data = try? Data(contentsOf: url!)

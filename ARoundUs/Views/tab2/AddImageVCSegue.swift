@@ -10,6 +10,10 @@ import UIKit
 
 
 class AddImageVCSegue: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, InformingDelegate  {
+    
+    let currentDate = Date()
+    
+    
     var worldVC = ViewController()
     
     var galleryAPIArray = [memes]()
@@ -69,8 +73,8 @@ class AddImageVCSegue: UIViewController, UIImagePickerControllerDelegate, UINavi
         
         if UserProfileCache.get() == nil {
             print("add image first")
-            
-            let gallery = memes(name: userTitlePassed ?? "",details: userSubtitlePassed ?? "", imageData: (userImagePassed?.jpegData(compressionQuality: 0))!)
+        
+            let gallery = memes(name: userTitlePassed ?? "",details: userSubtitlePassed ?? "", imageData: (userImagePassed?.jpegData(compressionQuality: 0))!, date: currentDate)
             galleryAPIArray.append(gallery)
             print("galleryAPIArray from AddImageVC: \(galleryAPIArray)")
             print("galleryAPIArray items: \(galleryAPIArray.count)")
@@ -82,7 +86,7 @@ class AddImageVCSegue: UIViewController, UIImagePickerControllerDelegate, UINavi
             print("galleryAPIArray from userDefault: \(galleryAPIArray)")
             print("galleryAPIArray items: \(galleryAPIArray.count)")
             
-            let gallery = memes(name: userTitlePassed ?? "",details: userSubtitlePassed ?? "", imageData: (userImagePassed?.jpegData(compressionQuality: 0))!)
+            let gallery = memes(name: userTitlePassed ?? "",details: userSubtitlePassed ?? "", imageData: (userImagePassed?.jpegData(compressionQuality: 0))!, date: currentDate)
             galleryAPIArray.append(gallery)
             print("galleryAPIArray from AddImageVC: \(galleryAPIArray)")
             print("galleryAPIArray items: \(galleryAPIArray.count)")
@@ -115,6 +119,7 @@ class AddImageVCSegue: UIViewController, UIImagePickerControllerDelegate, UINavi
         
         actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action: UIAlertAction) in
             imagePickerController.sourceType = .photoLibrary
+            imagePickerController.allowsEditing = true
             self.present(imagePickerController, animated: true, completion: nil)
         }))
         
@@ -176,7 +181,7 @@ struct UserProfileCache {
         if let data = UserDefaults.standard.value(forKey: key) as? Data {
             userData = try? PropertyListDecoder().decode([memes].self, from: data)
             print("Load data from UserDefaults")
-            return userData!
+            return userData ?? [memes]()
         } else {
             print("Load data from UserDefaults")
             return userData

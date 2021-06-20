@@ -15,8 +15,11 @@ class GalleryCell: UITableViewCell {
     
     func setGallery(gallery: memes) {
         galleryImageView.image = UIImage(data: gallery.imageData)
-        galleryImageView.layer.cornerRadius = 10
-        
+  
+        galleryImageView.layer.borderWidth = 2
+        galleryImageView.layer.borderColor = UIColor.systemGray.cgColor
+        galleryImageView.layer.cornerRadius = 20
+       
         
         galleryTitle.text = gallery.name
         gallerySubtitle.text = gallery.details

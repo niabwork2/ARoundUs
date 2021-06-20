@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C12390B267F3AB400200FEE /* GalleryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C12390A267F3AB400200FEE /* GalleryDetailViewController.swift */; };
 		8C24BCDB266CD14D0016EB66 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C24BCDA266CD14D0016EB66 /* GalleryCell.swift */; };
 		8C24BCDD266CE1B80016EB66 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C24BCDC266CE1B80016EB66 /* MainTabBarController.swift */; };
 		8C3EA81126652F5400A62D9E /* memes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3EA81026652F5400A62D9E /* memes.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C12390A267F3AB400200FEE /* GalleryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDetailViewController.swift; sourceTree = "<group>"; };
 		8C24BCDA266CD14D0016EB66 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
 		8C24BCDC266CE1B80016EB66 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		8C3EA81026652F5400A62D9E /* memes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memes.swift; sourceTree = "<group>"; };
@@ -61,6 +63,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C12390C267F4B8900200FEE /* tab1 */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C89FA26074EB900F0A777 /* ViewController.swift */,
+			);
+			path = tab1;
+			sourceTree = "<group>";
+		};
+		8C12390D267F4B9200200FEE /* tab0 */ = {
+			isa = PBXGroup;
+			children = (
+				8C9EB15A266C0C3600D7B942 /* GalleryTableViewController.swift */,
+				8C24BCDA266CD14D0016EB66 /* GalleryCell.swift */,
+				8C12390A267F3AB400200FEE /* GalleryDetailViewController.swift */,
+			);
+			path = tab0;
+			sourceTree = "<group>";
+		};
+		8C12390E267F4B9C00200FEE /* tab2 */ = {
+			isa = PBXGroup;
+			children = (
+				8C9EB158266BE71800D7B942 /* AddImageVCSegue.swift */,
+			);
+			path = tab2;
+			sourceTree = "<group>";
+		};
 		8C7C89EA26074EB800F0A777 = {
 			isa = PBXGroup;
 			children = (
@@ -82,8 +110,8 @@
 			children = (
 				8C7C8A0426074EB900F0A777 /* Info.plist */,
 				8C9EB157266BCAC400D7B942 /* Other */,
-				8C9EB156266BCAB000D7B942 /* Model */,
 				8C7C8A0B2607500900F0A777 /* SK-scene */,
+				8C9EB156266BCAB000D7B942 /* Model */,
 				8C9EB155266BCA9000D7B942 /* Views */,
 			);
 			path = ARoundUs;
@@ -106,12 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				8C24BCDC266CE1B80016EB66 /* MainTabBarController.swift */,
-				8C7C89FA26074EB900F0A777 /* ViewController.swift */,
-				8C9EB158266BE71800D7B942 /* AddImageVCSegue.swift */,
-				8C9EB15A266C0C3600D7B942 /* GalleryTableViewController.swift */,
-				8C24BCDA266CD14D0016EB66 /* GalleryCell.swift */,
 				8C7C89FC26074EB900F0A777 /* Main.storyboard */,
-				8C7C8A0126074EB900F0A777 /* LaunchScreen.storyboard */,
+				8C12390D267F4B9200200FEE /* tab0 */,
+				8C12390C267F4B8900200FEE /* tab1 */,
+				8C12390E267F4B9C00200FEE /* tab2 */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,6 +157,7 @@
 				8C7C89FF26074EB900F0A777 /* Assets.xcassets */,
 				8C7C89F826074EB900F0A777 /* art.scnassets */,
 				8C7C89F626074EB900F0A777 /* AppDelegate.swift */,
+				8C7C8A0126074EB900F0A777 /* LaunchScreen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -216,6 +243,7 @@
 				8C24BCDB266CD14D0016EB66 /* GalleryCell.swift in Sources */,
 				8C24BCDD266CE1B80016EB66 /* MainTabBarController.swift in Sources */,
 				8C7C89FB26074EB900F0A777 /* ViewController.swift in Sources */,
+				8C12390B267F3AB400200FEE /* GalleryDetailViewController.swift in Sources */,
 				8C7C89F726074EB900F0A777 /* AppDelegate.swift in Sources */,
 				8C3EA81126652F5400A62D9E /* memes.swift in Sources */,
 				8C3EA8132665303300A62D9E /* DataAPI.swift in Sources */,
