@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import SwipeCellKit
 
-class GalleryCell: UITableViewCell {
+class GalleryCell: SwipeTableViewCell {
 
     @IBOutlet weak var galleryImageView: UIImageView!
     @IBOutlet weak var galleryTitle: UILabel!

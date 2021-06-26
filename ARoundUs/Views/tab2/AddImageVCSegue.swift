@@ -7,13 +7,10 @@
 
 import UIKit
 
-
-
 class AddImageVCSegue: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, InformingDelegate  {
     
     let currentDate = Date()
-    
-    
+
     var worldVC = ViewController()
     
     var galleryAPIArray = [memes]()
@@ -22,19 +19,13 @@ class AddImageVCSegue: UIViewController, UIImagePickerControllerDelegate, UINavi
         return galleryAPIArray
     }
     
-    
-    
-    
-    
     var userTitlePassed: String?
     var userSubtitlePassed: String?
     var userImagePassed: UIImage?
     
     @IBOutlet weak var imageView: UIImageView!
-    
     @IBOutlet weak var titleTf: UITextField!
     @IBOutlet weak var subTitleTf: UITextField!
-    
     @IBOutlet weak var okButton: UIButton!
 
     
@@ -152,11 +143,7 @@ class AddImageVCSegue: UIViewController, UIImagePickerControllerDelegate, UINavi
         picker.dismiss(animated: true, completion: nil)
     }
     
-    
-    
-
 }
-
 
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
@@ -171,23 +158,68 @@ extension UIViewController {
 }
 
 struct UserProfileCache {
-    static let key = "userProfileCache"
+    static let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist")
+    
+    //static let key = "userProfileCache"
+
     static func save(_ value: [memes]!) {
-         UserDefaults.standard.set(try? PropertyListEncoder().encode(value), forKey: key)
+        
+        let encoder = PropertyListEncoder()
+        
+        do {
+            let data = try encoder.encode(value)
+            try data.write(to: dataFilePath!)
+        } catch {
+            print("Error encoding item array, \(error)")
+        }
+        
         print("Saved data in UserDefaults")
     }
+    
     static func get() -> [memes]? {
         var userData: [memes]?
-        if let data = UserDefaults.standard.value(forKey: key) as? Data {
-            userData = try? PropertyListDecoder().decode([memes].self, from: data)
-            print("Load data from UserDefaults")
+ 
+          if let data = try? Data(contentsOf: dataFilePath!) {
+                let decoder = PropertyListDecoder()
+                do {
+                userData = try decoder.decode([memes].self, from: data)
+                } catch {
+                    print("Error encoding item array, \(error)")
+                }
+            }
+        
+            print("Loaded data from UserDefaults")
             return userData ?? [memes]()
-        } else {
-            print("Load data from UserDefaults")
-            return userData
-        }
+   
     }
-    static func remove() {
-        UserDefaults.standard.removeObject(forKey: key)
+    
+    static func remove(arrayIndex: Int) {
+        //UserDefaults.standard.removeObject(forKey: key)
+        //UserDefaults.standard.synchronize()
+        
+        var userData: [memes]?
+        let encoder = PropertyListEncoder()
+ 
+          if let data = try? Data(contentsOf: dataFilePath!) {
+                let decoder = PropertyListDecoder()
+                do {
+                userData = try decoder.decode([memes].self, from: data)
+                    print("before remove: \(String(describing: userData))")
+                    let removedItem = userData?.remove(at: arrayIndex)
+                   
+                    print("remove \(String(describing: removedItem)) from custom plist")
+                    print("after remove: \(String(describing: userData))")
+                    
+                    let data = try encoder.encode(userData)
+                    try data.write(to: dataFilePath!)
+                    
+                } catch {
+                    print("Error encoding item array, \(error)")
+                }
+            }
+        
+          
+           
     }
 }
+

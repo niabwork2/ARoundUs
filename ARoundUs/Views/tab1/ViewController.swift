@@ -14,6 +14,7 @@ protocol InformingDelegate {
 }
 
 class ViewController: UIViewController, ARSCNViewDelegate {
+    
     @IBOutlet var sceneView: ARSCNView!
     
     var delegate: InformingDelegate?
@@ -27,6 +28,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         galleryAPIArray = self.delegate?.valueChanged() ?? [memes]()
         print("galleryAPIArray from ViewController: \(galleryAPIArray)")
         UserProfileCache.save(galleryAPIArray)
+        
     }
    
     func sendData(dataArray: [memes], completion: ([memes])->([memes])) {
@@ -58,8 +60,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        
+
 
         // Set the view's delegate
         sceneView.delegate = self
@@ -113,6 +114,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         if UserProfileCache.get() == nil {
             UserProfileCache.save(galleryAPIArray)
+            
             galleryAPIArray = UserProfileCache.get() ?? []
             print("galleryAPIArray from userDefault first: \(galleryAPIArray)")
             print("galleryAPIArray items first: \(galleryAPIArray.count)")
